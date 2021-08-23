@@ -1,0 +1,82 @@
+Start
+
+integer numOfChairs, totalCost, costOfOneChair
+
+costOfOneChair = 1500
+
+print ”enter the amount of chairs: ”
+
+input numOfChairs
+
+if ( numOfChairs > 0)
+
+{
+
+	if ( numOfChairs < 10 )
+	{
+
+		totalCost = 1500*numOfChairs
+
+	print “the price of ” numOfChairs “after discount is: ” totalCost
+
+                 }	
+
+                  if ( numOfChairs >= 10 AND numOfChairs < 20)
+
+	{	
+
+discount = ( costOfOneChair * numOfChairs )/10
+
+		totalCost = ( costOfOneChair * numOfChairs ) – discount
+
+		print “the price of ” numOfChairs “after discount is: ” totalCost
+
+	}
+
+		if ( numOfChairs >= 20 AND numOfChairs < 50)
+
+	{	
+
+discount = ( costOfOneChair * numOfChairs )/20
+
+		totalCost = ( costOfOneChair * numOfChairs ) – discount
+
+		print “the price of ” numOfChairs “after discount is: ” totalCost
+
+	}
+
+		if ( numOfChairs >= 50 AND numOfChairs < 99)
+
+	{	
+
+discount = ( costOfOneChair * numOfChairs )/30
+
+		totalCost = ( costOfOneChair * numOfChairs ) – discount
+
+		print “the price of ” numOfChairs “after discount is: ” totalCost
+
+	}
+
+		if ( numOfChairs >= 100)
+
+	{	
+
+discount = ( costOfOneChair * numOfChairs )/50
+
+		totalCost = ( costOfOneChair * numOfChairs ) – discount
+
+		print “the price of ” numOfChairs “after discount is: ” totalCost
+
+	}
+
+}
+
+else
+
+{
+
+	print “invalid input: ”
+
+}
+
+End
